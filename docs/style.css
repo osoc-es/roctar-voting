@@ -1,0 +1,79 @@
+/*Usamos la fuente que se usa en el resto de páginas de Roctar*/
+html {
+    font-family: 'Titillium Web';
+}
+
+/*Elimina los márgenes por defecto de la página*/
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Establece las dimensiones de la rejilla por cada dispositivo */
+@media only screen and (max-width: 600px) {
+    .contenedor {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+    .contenedor {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 1001px) {
+    .contenedor {
+        width: 48em;
+        margin: 0 auto;
+    }
+}
+
+main {
+   flex: 1; 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.contenido {
+    max-width: 1200px;
+}
+
+header {
+    height: 10em;
+    background-color: #e00000
+}
+
+.header-blanco {
+    background-color: white;
+}
+
+.logo {
+	display: table;
+	margin: 0 auto;
+	width: 213px;
+}
+
+.footer {
+	background: #e00000;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    font-weight: 300;
+    font-size: 0.8em;
+    width: 100%;
+}
+
+.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
